@@ -1,0 +1,12 @@
+services:
+  server:
+    build: ./src
+    command: ./server 8888 8889
+
+  client1:
+    build: ./src
+    command: ./client
+
+  client2:
+    build: ./src
+    command: ./client

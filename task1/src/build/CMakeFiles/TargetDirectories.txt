@@ -1,0 +1,4 @@
+/Users/namigdamirov/Desktop/hw/HseDistSys/task1/src/build/CMakeFiles/rebuild_cache.dir
+/Users/namigdamirov/Desktop/hw/HseDistSys/task1/src/build/CMakeFiles/edit_cache.dir
+/Users/namigdamirov/Desktop/hw/HseDistSys/task1/src/build/CMakeFiles/client.dir
+/Users/namigdamirov/Desktop/hw/HseDistSys/task1/src/build/CMakeFiles/server.dir
