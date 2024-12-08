@@ -1,0 +1,57 @@
+services:
+  raft1:
+    build: ./src
+    ports:
+      - 8081:8081
+    environment:
+      - RAFT_PORT=8081
+      - RAFT_NAME=raft1
+      - RAFT_LEADER_ON_START=true
+    volumes:
+      - ./config/server.yaml:/app/config/server.yaml
+
+  raft2:
+    build: ./src
+    ports:
+      - 8082:8082
+    environment:
+      - RAFT_PORT=8082
+      - RAFT_NAME=raft2
+    volumes:
+      - ./config/server.yaml:/app/config/server.yaml
+
+  raft3:
+    build: ./src
+    ports:
+      - 8083:8083
+    environment:
+      - RAFT_PORT=8083
+      - RAFT_NAME=raft3
+    volumes:
+      - ./config/server.yaml:/app/config/server.yaml
+
+  raft4:
+    build: ./src
+    ports:
+      - 8084:8084
+    environment:
+      - RAFT_PORT=8084
+      - RAFT_NAME=raft4
+    volumes:
+      - ./config/server.yaml:/app/config/server.yaml
+
+  raft5:
+    build: ./src
+    ports:
+      - 8085:8085
+    environment:
+      - RAFT_PORT=8085
+      - RAFT_NAME=raft5
+    volumes:
+      - ./config/server.yaml:/app/config/server.yaml
+
+networks:
+  raft:
+
+volumes:
+  config:

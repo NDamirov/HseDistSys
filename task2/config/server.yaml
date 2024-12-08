@@ -1,0 +1,19 @@
+ports:
+  - 8081
+  - 8082
+  - 8083
+  - 8084
+  - 8085
+
+vote_duration:
+  min: 3000
+  max: 7000
+
+timeout:
+  leader:
+    heartbeat: 2500
+
+  follower:
+    leader_heartbeat: 5000
+
+  response: 1000
